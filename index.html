@@ -100,7 +100,7 @@
               </div>
           </ul>
           <img class="mx-4" src="Assets\shopping-cart.svg">
-          <img src="Assets\search (1).svg" onclick="showMenu()">   
+          <img id="search-icon" src="Assets\search (1).svg" onclick="showMenu()">   
         </div>
       </nav>
 
@@ -201,31 +201,16 @@
               </div>
         </div>
     </div>
-    <hr>
-    <div class="row">
-        <div id="tooltip1" class="col-8 offset-2">
-            <p>We are GOG.COM, the</p>
-           <a href="#" data-toggle="tooltip" title="Some tooltip text!">DRM-free</a>
-          <div class="tooltip bs-tooltip-top" role="tooltip">
-            <div class="arrow"></div>
-            <div class="tooltiptext">
-              <img src="Assets/DRM.JPG">
-            </div>
-          </div>
-          <p>home for a</p>
-          <a href="#" data-toggle="tooltip" title="Some tooltip text!">curated selection</a>
-          <div class="tooltip bs-tooltip-top" role="tooltip">
-            <div class="arrow"></div>
-            <div class="tooltiptext">
-              Own the thing you buy!
-            </div>
-          </div>
-          <p>of games. This place was made for gamers, so make yourself</p>
-          <p id="p200">|</p>
-        </div>
-         <a id="galaxy" href="#">The new GOG GALAXY 2.0</a>  
+
+    <div id="short-introduction" class="row">
+      <div class="col-7 pt-1 px-2 offset-1">
+        <p>We are GOG.COM, the DRM-free  home for a curated selection  of games. This place was made for gamers, so make yourself at
+        <br> home.</p>
+      </div>
+      <div class="col-4 py-2">
+        <a id="galaxy" href="#"><img src="Assets/galaxy.JPG"><span>The new GOG GALAXY 2.0</span></a>
+      </div>
     </div>
-    <hr>
 </div>
 
 <!-- Now on sale -->
@@ -242,13 +227,29 @@
             <a href="#weekend-sale">Weekend Sale</a>
             <a href="#batman">Batman</a>
         </div>
+        
+    </div>
+    <hr>
+    <div class="row">
+        <div id="featured-deals" class="col-12 d-flex mb-5 ml-1">
+            <img src="Assets/featured deals1.JPG" width="270" height="450px">
+            <img src="Assets/featured deals2.JPG" width="270" height="450px">
+            <img src="Assets/featured deals3.JPG" width="270" height="450px">
+            <img src="Assets/featured deals4.JPG" width="270" height="450px">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <i class="fas fa-star"></i>
     </div>
 </div>
 
 
       <script>
           function showMenu(){
-            document.getElementById('navbarLeft').classList.toggle('search-visible');
+              document.getElementById('navbarLeft').classList.toggle('search-visible');
           }
 
           $(function () {

@@ -87,48 +87,42 @@ padding-right: 10px;
   margin-right: 4px;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px solid black;
-  }
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    border-radius: 6px;
-   
-    position: absolute;
-    z-index: 1;
-  } 
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
+#short-introduction{
+  justify-content: center;
+  margin-top: 20px;
+  border-top: 1px solid rgb(175, 175, 175);
+  border-bottom: 1px solid rgb(175, 175, 175);
 }
 
-#tooltip1 {
-    margin-left: 110px;
-    text-align: center;
-}
-
-#tooltip1 p{
-    display: inline-block;
-    font-size: 15px;
-}
-
-#p200{
-    color: #888;
-    font-size: 20px;
-    display: inline-block;
-    margin-left: 20px;
+#short-introduction p{
+  font-size: 14px;
+  margin-left: 70px;
 }
 
 #galaxy{
     color: purple;
+    font-weight:500;
+    font-size: 15px;
     text-decoration: none;
-    margin-right: 0;
+    margin-left: 40px;
+    padding: 5px;
 }
 
 .linked-text a{
-    
+    text-align: center;
+    margin-left: 18px;
+    text-decoration: none;
+    color: #666666;
+}
+
+.linked-text a:hover{
+    color: rebeccapurple;
+}
+
+#featured-deals{
+    justify-content: space-between;
+}
+
+#featured-deals img{
+    /* margin-right: 5px; */
 }
