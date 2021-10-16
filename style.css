@@ -113,10 +113,16 @@ padding-right: 10px;
     margin-left: 18px;
     text-decoration: none;
     color: #666666;
+    font-weight: 500;
+}
+
+.needBorder{
+  border-bottom: 3px solid purple;
+  padding-bottom: 15px;
 }
 
 .linked-text a:hover{
-    color: rebeccapurple;
+    color: purple;
 }
 
 #featured-deals{

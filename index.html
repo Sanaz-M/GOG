@@ -216,16 +216,16 @@
 <!-- Now on sale -->
 <div class="container">
     <div class="row">
-        <div class="linked-text col-md-12">
+        <div class="linked-text col-md-12 mt-3">
             <i class="fas fa-percentage"></i><span> <strong>Now on sale</strong></span>
-            <a href="#featured-deals">Featured deals</a>
-            <a href="#weekly-sale">Weekly Sale</a>
-            <a href="#fallout">Fallout</a>
-            <a href="#midweek-sale">Midweek Sale</a>
-            <a href="#aspyr">Aspyr</a>
-            <a href="#seng">SNEG</a>
-            <a href="#weekend-sale">Weekend Sale</a>
-            <a href="#batman">Batman</a>
+            <a href="#featured-deals" onclick="showBorder()">Featured deals</a>
+            <a href="#weekly-sale" onclick="showBorder()">Weekly Sale</a>
+            <a href="#fallout" onclick="showBorder()">Fallout</a>
+            <a href="#midweek-sale" onclick="showBorder()">Midweek Sale</a>
+            <a href="#aspyr" onclick="showBorder()">Aspyr</a>
+            <a href="#seng" onclick="showBorder()">SNEG</a>
+            <a href="#weekend-sale" onclick="showBorder()">Weekend Sale</a>
+            <a href="#batman" onclick="showBorder()">Batman</a>
         </div>
         
     </div>
@@ -237,9 +237,17 @@
             <img class="featured" src="Assets/featured deals3.JPG" width="270" height="450px">
             <img class="featured" src="Assets/featured deals4.JPG" width="270" height="450px">
         </div>
+
+        <!-- <div id="weekly-sale" class="col-12 d-flex mb-5">
+          <img class="featured" src="Assets/tile (14).jpg" width="270" height="450px">
+          <img class="featured" src="Assets/tile (15).jpg" width="270" height="450px">
+          <img class="featured" src="Assets/tile (16).jpg" width="270" height="450px">
+          <img class="featured" src="Assets/tile (17).jpg" width="270" height="450px">
+      </div> -->
     </div>
 </div>
 
+<!-- What's good -->
 <div class="container">
     <div class="row">
         <i class="fas fa-star"></i>
@@ -248,13 +256,15 @@
 
 
       <script>
+        
           function showMenu(){
               document.getElementById('navbarLeft').classList.toggle('search-visible');
           }
 
-          $(function () {
-             $('[data-toggle="tooltip"]').tooltip()
-       })
+          function showBorder(){
+              document.querySelector('.linked-text a').classList.toggle('needBorder');
+          }
+
       </script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
