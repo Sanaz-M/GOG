@@ -214,9 +214,9 @@
 </div>
 
 <!-- Now on sale -->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="linked-text col-md-12 mt-3">
+        <div class="linked-text col-md-10 mt-3 mb-3 py-2 offset-1">
             <i class="fas fa-percentage"></i><span> <strong>Now on sale</strong></span>
             <a href="#featured-deals" onclick="showBorder()">Featured deals</a>
             <a href="#weekly-sale" onclick="showBorder()">Weekly Sale</a>
@@ -229,14 +229,17 @@
         </div>
         
     </div>
-    <hr>
-    <div class="row">
-        <div id="featured-deals" class="col-12 d-flex mb-5">
+    <div class="row"> 
+      <div id="featured-deals" class="col-8 d-flex mb-5">
+            <img class="chevron-left" src="Assets/left-arrow.png" width="25px" height="25px">
             <img class="featured" src="Assets/featured deals1.JPG" width="270" height="450px">
             <img class="featured" src="Assets/featured deals2.JPG" width="270" height="450px">
             <img class="featured" src="Assets/featured deals3.JPG" width="270" height="450px">
             <img class="featured" src="Assets/featured deals4.JPG" width="270" height="450px">
-        </div>
+            <img class="chevron-right" src="Assets/right-arrow.png" width="25px" height="25px">
+      </div>
+    </div>             
+</div>
 
         <!-- <div id="weekly-sale" class="col-12 d-flex mb-5">
           <img class="featured" src="Assets/tile (14).jpg" width="270" height="450px">
@@ -248,10 +251,42 @@
 </div>
 
 <!-- What's good -->
-<div class="container">
+<div id="goodSection-container" class="container">
     <div class="row">
-        <i class="fas fa-star"></i>
+      <div class="good-section col-md-12 mt-5">
+         <i class="fas fa-star p-1"></i>
+        <h6>What's good?</h6>
+      </div>
     </div>
+    
+    <div class="row">
+      <div class="col-md-6 mb-5">
+        <div class="card">
+          big card
+        </div>
+      </div>
+      <div class="col-md-6 mb-5">
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              card1
+            </div>
+            <div class="card">
+              card2
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              card1
+            </div>
+            <div class="card">
+              card2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 </div>
 
 

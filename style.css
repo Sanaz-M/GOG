@@ -121,12 +121,23 @@ padding-right: 10px;
   padding-bottom: 15px;
 }
 
+.linked-text{
+ margin-left: 200px;
+  border-bottom: 1px solid #bcbcbc;
+}
+
 .linked-text a:hover{
     color: purple;
 }
 
 #featured-deals{
     justify-content: space-between;
+    margin-left: 150px;
+}
+
+.featured{
+  margin-right: 12px;
+  position: abso;
 }
 
 .featured:hover {
@@ -138,3 +149,24 @@ padding-right: 10px;
    width: 275px;
    height: 455px;
 }
+
+.chevron-right, .chevron-left{
+  margin-top: 200px;
+  opacity: 0.7;
+}
+
+.chevron-left{
+  margin-right: 10px;
+}
+
+.chevron-left.featured:last-of-type{
+  margin-right: 10px;
+}
+
+.good-section{
+  border-bottom: 1px solid #bcbcbc;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
+
